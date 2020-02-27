@@ -285,7 +285,7 @@ get_player_profile<-function(playerlink){
 
 }
 
-#below is a cleanup of uneccesary columns before saving such as duplicates
+#below is a cleanup of uneccesary columns, such as duplicates, before saving
 teamrm<-which(str_detect(colnames(all_player_df),"Tm")==TRUE)
 all_player_df<-all_player_df[,-teamrm]
 seasonrm<-which(str_detect(colnames(all_player_df),"Season")==TRUE)
